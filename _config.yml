@@ -23,3 +23,16 @@ mini_magick:
         source: img
         destination: img/thumbnail
         resize: "100x200"
+
+prose:
+  metadata:
+    _posts:
+      - name: "category"
+        field:
+          element: "hidden"
+          value: "articles"
+    _posts/blog:
+      - name: "category"
+        field:
+          element: "hidden"
+          value: "blog"
