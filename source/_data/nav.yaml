@@ -1,11 +1,15 @@
 # nav.yaml
+#
 # This file provides the data for the navigation system.
+# 
+#
+#
 
 - title: "Home"
   href: "/"
 
 - title: "About"
-  href: "about"
+  href: "/about"
 
 - title: "News"
-  href: "news"
+  href: "/news"
