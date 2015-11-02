@@ -26,7 +26,6 @@ mini_magick:
 
 prose:
   metadata:
-    _posts:
       - name: "published"
         field:
           label: "Published"
@@ -37,3 +36,4 @@ prose:
         field:
           element: "hidden"
           value: "default"
+
