@@ -28,11 +28,6 @@ prose:
   ignore: ['_includes','assets','_assets','_layouts','_plugins','/.jekyll-metadata','feed.xml',]
   media: img
   metadata:
-  - name: "date"
-    field:
-      label: "Date"
-      element: "text"
-      value: CURRENT_DATETIME
     _posts:
       - name: "date"
         field:
