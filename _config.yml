@@ -25,6 +25,7 @@ mini_magick:
         resize: "100x200"
 
 prose:
+  ignore: ['_includes']
   metadata:
     _posts:
       - name: "published"
