@@ -1,8 +1,8 @@
 gems: [bourbon, neat]
 
 sass:
-    style: compressed
-	
+  style: compressed
+
 # Site settings
 title: Jelly
 description: An example site
