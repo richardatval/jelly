@@ -27,6 +27,12 @@ mini_magick:
 prose:
   metadata:
     _posts:
+      - name: "published"
+        field:
+          element: "button"
+          value: "off"
+          on: "published"
+          off: "unpublished"
       - name: "layout"
         field:
           element: "hidden"
