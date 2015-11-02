@@ -1,3 +1,7 @@
+---
+published: false
+---
+
 gems: [bourbon, neat]
 
 # Structure configuration
@@ -17,6 +21,8 @@ baseurl: /jelly
 # Build settings
 markdown: kramdown
 
+# Sets up defaults for content types
+
 defaults:
   -
     scope:
@@ -31,6 +37,8 @@ mini_magick:
         source: img
         destination: img/thumbnail
         resize: "100x200"
+
+#Prose settings
 
 prose:
   ignore: ['_includes','assets','_assets','_layouts','_plugins','/.jekyll-metadata','feed.xml',]
