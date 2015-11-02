@@ -27,7 +27,7 @@ mini_magick:
 prose:
   metadata:
     _posts:
-      - name: "published"
+      - name: "publish"
         field:
           element: "button"
           on: "published"
