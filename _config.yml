@@ -29,6 +29,12 @@ prose:
   media: img
   metadata:
     _posts:
+      - name: "date"
+      field:
+        label: "Date"
+        element: "text"
+        value: CURRENT_DATETIME
+        
       - name: "published"
         field:
           label: "Published"
