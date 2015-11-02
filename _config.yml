@@ -36,6 +36,12 @@ prose:
   ignore: ['_includes','assets','_assets','_layouts','_plugins','/.jekyll-metadata','feed.xml',]
   media: img
   metadata:
+    "":
+      - name: "published"
+        field:
+          label: "Published"
+          element: "checkbox"
+          value: false   
     _posts:
       - name: "published"
         field:
