@@ -23,3 +23,18 @@ mini_magick:
         source: img
         destination: img/thumbnail
         resize: "100x200"
+
+prose:
+  ignore: ['_includes','assets','_assets','_layouts','_plugins','/.jekyll-metadata','feed.xml',]
+  media: img
+  metadata:
+    _posts:
+      - name: "published"
+        field:
+          label: "Published"
+          element: "checkbox"
+          value: false
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "default"
