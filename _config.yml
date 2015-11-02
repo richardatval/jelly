@@ -1,0 +1,25 @@
+gems: [bourbon, neat]
+
+# Structure configuration
+source: source
+destination: _site
+
+assets:
+  cachebust: soft
+
+# Site settings
+title: Jelly
+description: An example site
+
+# Name of project on Github
+baseurl: /jelly
+
+# Build settings
+markdown: kramdown
+
+# Mini Magick Settings
+mini_magick:
+    thumbnail:
+        source: img
+        destination: img/thumbnail
+        resize: "100x200"
