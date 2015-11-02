@@ -27,12 +27,7 @@ mini_magick:
 prose:
   metadata:
     _posts:
-      - name: "category"
+      - name: "layout"
         field:
           element: "hidden"
-          value: "articles"
-    _posts/blog:
-      - name: "category"
-        field:
-          element: "hidden"
-          value: "blog"
+          value: "default"
