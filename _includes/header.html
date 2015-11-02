@@ -1,0 +1,29 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="{{ site.description }}">
+		<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+		<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+		<link rel="stylesheet" href="{% asset_path application.css %}">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	</head>
+	<body>
+	<header class="navigation" role="banner">
+	  <div class="navigation-wrapper">
+	    <a href="javascript:void(0)" class="logo">
+	      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo Image">
+	    </a>
+	    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+	    <nav role="navigation">
+	      <ul id="js-navigation-menu" class="navigation-menu show">
+			 {% for nav in site.data.nav %}
+	        <li class="nav-link"><a href="{{ site.baseurl }}{{ nav.href }}">{{ nav.title }}</a></li>
+			{% endfor %}
+	      </ul>
+	    </nav>
+	  </div>
+	</header>
