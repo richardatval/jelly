@@ -11,9 +11,6 @@ assets:
 title: Jelly
 description: An example site
 
-# Name of project on Github
-baseurl: /jelly
-
 # Build settings
 markdown: kramdown
 
