@@ -14,13 +14,6 @@ baseurl: /jelly
 # Build settings
 markdown: kramdown
 
-# Mini Magick Settings
-mini_magick:
-    thumbnail:
-        source: img
-        destination: img/thumbnail
-        resize: "100x200"
-
 prose:
   ignore: ['_includes','assets','_assets','_layouts','_plugins','/.jekyll-metadata','feed.xml',]
   media: img
