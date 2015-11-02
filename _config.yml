@@ -30,8 +30,8 @@ prose:
       - name: "published"
         field:
           element: "button"
-          on: "published"
-          off: "unpublished"
+          on: "true"
+          off: "false"
       - name: "layout"
         field:
           element: "hidden"
