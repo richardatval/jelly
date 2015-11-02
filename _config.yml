@@ -33,6 +33,7 @@ prose:
         field:
           label: "Published"
           element: "button"
+          value: "false"
           on: "true"
           off: "false"
       - name: "layout"
