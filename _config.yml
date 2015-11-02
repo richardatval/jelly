@@ -29,6 +29,7 @@ prose:
     _posts:
       - name: "published"
         field:
+          label: "Published"
           element: "button"
           on: "true"
           off: "false"
