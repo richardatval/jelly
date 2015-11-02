@@ -32,10 +32,8 @@ prose:
       - name: "published"
         field:
           label: "Published"
-          element: "button"
+          element: "checkbox"
           value: "false"
-          on: "true"
-          off: "false"
       - name: "layout"
         field:
           element: "hidden"
