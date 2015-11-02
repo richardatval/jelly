@@ -65,7 +65,13 @@ jekyll build && git subtree push --prefix build origin gh-pages
 Build online on Github (you want to set the destination directory to '_site' which is jekyll and githubs default):
 
 ```
-git push origin gh-pages
+git subtree push --prefix source origin gh-pages
+```
+
+Pull down updates to work on a live version with:
+
+```
+git pull -s subtree origin gh-
 ```
 
 Or install the [Proteus gem](https://github.com/thoughtbot/proteus) and enjoy some shortcuts.
