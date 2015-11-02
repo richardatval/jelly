@@ -17,6 +17,13 @@ baseurl: /jelly
 # Build settings
 markdown: kramdown
 
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+
 # Mini Magick Settings
 mini_magick:
     thumbnail:
@@ -29,11 +36,6 @@ prose:
   media: img
   metadata:
     _posts:
-      - name: "date"
-        field:
-          label: "Date"
-          element: "text"
-          value: CURRENT_DATETIME
       - name: "published"
         field:
           label: "Published"
