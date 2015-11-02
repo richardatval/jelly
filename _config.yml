@@ -25,7 +25,7 @@ mini_magick:
         resize: "100x200"
 
 prose:
-  ignore: ['_includes','assets','_assets','_layouts','_plugins']
+  ignore: ['_includes','assets','_assets','_layouts','_plugins','.jekll-metadata','feed.xml',]
   media: img
   metadata:
     _posts:
