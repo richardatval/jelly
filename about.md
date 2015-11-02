@@ -2,7 +2,7 @@
 layout: default
 ---
 
-### Rooms that make a difference
+# Rooms that make a difference
 
 Booking your conference or meeting at Orange Rooms will help to support local communities.
 

@@ -1,0 +1,103 @@
+---
+# Layouts must stay in HTML
+#
+# http://gmaps-samples-v3.googlecode.com/svn/trunk/styledmaps/wizard/index.html
+#
+---
+{% include header.html %}
+<section>
+	<article>
+		{{ content }}
+	</article>
+	<aside>
+		<h2>Visit us</h2>
+		<p>Why not come and say hello</p>
+	</aside>
+</section>
+
+<div id="map_canvas"></div>
+
+<footer class="footer" role="contentinfo">
+  <div class="footer-logo">
+    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo image">
+  </div>
+  <div class="footer-links">
+    <ul>
+      <li><h3>Content</h3></li>
+      <li><a href="javascript:void(0)">About</a></li>
+      <li><a href="javascript:void(0)">Contact</a></li>
+      <li><a href="javascript:void(0)">Products</a></li>
+    </ul>
+    <ul>
+      <li><h3>Follow Us</h3></li>
+      <li><a href="{{ site.data.facebook }}">Facebook</a></li>
+      <li><a href="{{ site.data.twitter }}">Twitter</a></li>
+      <li><a href="{{ site.data.youtube }}">YouTube</a></li>
+    </ul>
+    <ul>
+      <li><h3>Legal</h3></li>
+      <li><a href="javascript:void(0)">Terms and Conditions</a></li>
+      <li><a href="javascript:void(0)">Privacy Policy</a></li>
+    </ul>
+  </div>
+
+  <hr>
+
+  <p>Disclaimer area lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nostrum repudiandae saepe.</p>
+</footer>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script>
+	  var bittersMap = (function () {
+	    var myLatlng = new google.maps.LatLng({{ page.map-coordinates }}),
+	        mapCenter = new google.maps.LatLng({{ page.map-coordinates }}),
+	        mapCanvas = document.getElementById('map_canvas'),
+	        mapOptions = {
+	          center: mapCenter,
+	          zoom: 13,
+	          scrollwheel: false,
+	          draggable: true,
+	          disableDefaultUI: true,
+	          mapTypeId: google.maps.MapTypeId.ROADMAP
+	        },
+	        map = new google.maps.Map(mapCanvas, mapOptions),
+	        contentString =
+	          '<div id="content">'+
+	          '<div id="siteNotice">'+
+	          '</div>'+
+	          '<h1 id="firstHeading" class="firstHeading">{{ page.map-marker-title}}</h1>'+
+	          '<div id="bodyContent"'+
+	          '<p>{{ page.map-marker-content }}</p>'+
+	          '</div>'+
+	          '</div>',
+	        infowindow = new google.maps.InfoWindow({
+	          content: contentString,
+	          maxWidth: 300
+	        }),
+	        marker = new google.maps.Marker({
+	          position: myLatlng,
+	          map: map,
+	          title: '{{ page.map-marker-title }}'
+	        });
+
+	    return {
+	      init: function () {
+	        map.set('styles', [{
+	          featureType: 'landscape',
+	          elementType: 'geometry',
+	          stylers: [
+	            { hue: '#ffff00' },
+	            { saturation: 30 },
+	            { lightness: 10}
+	          ]}
+	        ]);
+
+	        google.maps.event.addListener(marker, 'click', function () {
+	          infowindow.open(map,marker);
+	        });
+	      }
+	    };
+	  }());
+
+	  bittersMap.init();
+	</script>
+{% include closure.html %}
