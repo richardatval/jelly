@@ -17,6 +17,14 @@ baseurl: /jelly
 # Build settings
 markdown: kramdown
 
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "pages"
+    values:
+      layout: "default"
+
 # Mini Magick Settings
 mini_magick:
     thumbnail:
@@ -28,6 +36,12 @@ prose:
   ignore: ['_includes','assets','_assets','_layouts','_plugins','/.jekyll-metadata','feed.xml',]
   media: img
   metadata:
+    "":
+      - name: "published"
+        field:
+          label: "Published"
+          element: "checkbox"
+          value: false   
     _posts:
       - name: "published"
         field:
