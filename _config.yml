@@ -5,7 +5,8 @@ source: source
 destination: build
 
 assets:
-  cachebust: soft
+  compress: true;
+  js: true;
 
 # Site settings
 title: Jelly
