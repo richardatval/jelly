@@ -1,8 +1,7 @@
 ---
 layout: hero
-"hero-title": Welcome to Jelly
-"hero-copy": This is a demonstration of how Jekyll works.
-published: true
+hero-title: Welcome to Jelly
+hero-copy: This is a demonstration of how Jekyll works.
 ---
 
 #Welcome to Jelly

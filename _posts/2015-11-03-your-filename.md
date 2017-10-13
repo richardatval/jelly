@@ -1,7 +1,7 @@
 ---
+title: Your Filename
+date: 2015-11-03 09:15:00 Z
 layout: default
-date: "2015-11-03 09:15 +0000"
-published: true
 ---
 
 ## A New Post
